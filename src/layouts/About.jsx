@@ -9,7 +9,7 @@ import { MdOutlineEmail, MdOutlineEventAvailable } from 'react-icons/md'
 
 const About = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-sky-100">
       <Container>
         <Flex className="items-center">
           <div className="w-6/12">
@@ -21,7 +21,7 @@ const About = () => {
           </div>
 
           <div className="w-6/12">
-          <div className='shadow-2xl p-10 flex flex-col gap-y-6'>
+          <div className='shadow-2xl p-10 flex flex-col gap-y-6 bg-white rounded-2xl'>
 
 
             <div className='flex justify-between'>

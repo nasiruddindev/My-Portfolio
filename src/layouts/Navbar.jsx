@@ -7,7 +7,7 @@ import ListItem from '../components/ListItem'
 
 const Navbar = () => {
   return (
-    <section className='bg-slate-400'>
+    <section className='bg-slate-400 py-5'>
       <Container>
         <Flex className="justify-between items-center">
           <div>

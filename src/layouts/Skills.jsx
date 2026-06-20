@@ -6,19 +6,24 @@ import { TiStarburst } from 'react-icons/ti'
 import { FaBootstrap, FaCss3, FaHtml5, FaReact } from 'react-icons/fa6'
 import { SiTailwindcss } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io'
+import { GiSkills } from 'react-icons/gi'
 
 const Skills = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-sky-100">
       <Container>
-        <Title text="Skills" className="text-center pb-5" />
+        <Flex className="items-center gap-x-2 justify-center">
+          <GiSkills className='text-4xl'/>
 
-        <div className="shadow-2xl p-10 w-8/12 mx-auto bg-white">
+          <Title text="Skills" className="text-center " />
+        </Flex>
+
+        <div className="shadow-2xl p-10 w-8/12 mx-auto bg-white rounded-2xl mt-10">
           <h3 className="text-primary text-3xl font-inter font-bold text-center pb-5">
             Frontend developer
           </h3>
 
-          <Flex className="justify-evenly mt-5">
+          <Flex className="justify-evenly mt-5 ">
             <Flex className="flex-col gap-y-6">
             <Flex className="gap-x-2 items-center shadow-xl p-3 rounded-2xl">
               <FaHtml5 className='text-xl'/>

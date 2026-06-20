@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../components/Container'
 import Image from '../components/Image'
-import Logo from '../Assets/logo2.png'
+import Logo from '../assets/logo.png'
 import Flex from '../components/Flex'
 import { FaFacebook, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa6'
 

@@ -2,7 +2,7 @@ import React from 'react'
 import Container from '../components/Container'
 import Flex from '../components/Flex'
 import Image from '../components/Image'
-import Logo from '../assets/logo2.png'
+import Logo from '../assets/logo.png'
 import ListItem from '../components/ListItem'
 
 const Navbar = () => {

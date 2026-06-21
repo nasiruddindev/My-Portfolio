@@ -10,24 +10,23 @@ const Hero = () => {
   return (
     <section className="bg-slate-400">
       <Container>
-        <Flex className="items-center">
-          <div className="w-6/12">
-            <h1 className="text-primary font-bold font-inter text-5xl py-5">
-              Hi I'm <br />
-              <span className="text-blue-700  text-6xl">
+          <div>
+            <h1 className="text-center text-primary font-bold font-inter text-2xl md:text-5xl py-5">
+              Hi I'm
+              <span className="text-blue-700 pl-3 text-3xl md:text-6xl">
                 Nasir Uddin
               </span>
             </h1>
 
-            <p className="text-secondary text-2xl font-medium font-inter max-w-110">
+            <p className="text-secondary text-xl text-center  md:text-2xl font-medium font-inter max-w-110 mx-auto">
               I build modern,responsive and user friendlly web applications with
               React
             </p>
-            <div className='py-6'>
+            <div className='py-6 text-center'>
               <Button text="Download Cv" />
             </div>
 
-            <div className='flex gap-x-5'>
+            <div className='flex gap-x-5 justify-center pb-10 '>
               <div className="border border-black/50 w-12 h-12  rounded-full flex justify-center items-center">
               <FaGithub className='text-3xl '/>
             </div>
@@ -43,11 +42,6 @@ const Hero = () => {
 
 
           </div>
-
-          <div className="w-6/12">
-          <Image src={Banner} className="w-full "/>
-          </div>
-        </Flex>
       </Container>
     </section>
   )

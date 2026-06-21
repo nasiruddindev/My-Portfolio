@@ -18,28 +18,28 @@ const Skills = () => {
           <Title text="Skills" className="text-center " />
         </Flex>
 
-        <div className="shadow-2xl p-10 w-8/12 mx-auto bg-white rounded-2xl mt-10">
-          <h3 className="text-primary text-3xl font-inter font-bold text-center pb-5">
+        <div className="shadow-2xl p-10 md:w-8/12 mx-3 md:mx-auto bg-white rounded-2xl mt-10">
+          <h3 className="text-primary text-2xl md:text-3xl font-inter font-bold text-center pb-5">
             Frontend developer
           </h3>
 
-          <Flex className="justify-evenly mt-5 ">
+          <Flex className="flex-col md:flex-row gap-y-6 md:gap-y-0 justify-evenly mt-5 ">
             <Flex className="flex-col gap-y-6">
-            <Flex className="gap-x-2 items-center shadow-xl p-3 rounded-2xl">
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
               <FaHtml5 className='text-xl'/>
-              <h5 className="text-2xl text-primary font-medium  font-inter">
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
                 HTML
               </h5>
             </Flex>
-            <Flex className="gap-x-2 items-center shadow-xl p-3 rounded-2xl">
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
               <FaCss3  className='text-xl'/>
-              <h5 className="text-2xl text-primary font-medium  font-inter">
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
                 CSS
               </h5>
             </Flex>
-            <Flex className="gap-x-2 items-center shadow-xl p-3 rounded-2xl">
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
               <FaBootstrap  className='text-xl'/>
-              <h5 className="text-2xl text-primary font-medium  font-inter">
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
                 BOOTSTRAP
               </h5>
             </Flex>
@@ -47,21 +47,21 @@ const Skills = () => {
 
 
           <Flex className="flex-col gap-y-6">
-            <Flex className="gap-x-2 items-center shadow-xl p-3 rounded-2xl">
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
               <SiTailwindcss  className='text-xl'/>
-              <h5 className="text-2xl text-primary font-medium  font-inter">
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
                 Tailwind
               </h5>
             </Flex>
-            <Flex className="gap-x-2 items-center shadow-xl p-3 rounded-2xl">
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
               <IoLogoJavascript   className='text-xl'/>
-              <h5 className="text-2xl text-primary font-medium  font-inter">
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
                 JavaScript
               </h5>
             </Flex>
-            <Flex className="gap-x-2 items-center shadow-xl p-3 rounded-2xl">
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
               <FaReact  className='text-xl'/>
-              <h5 className="text-2xl text-primary font-medium  font-inter">
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
                 React
               </h5>
             </Flex>

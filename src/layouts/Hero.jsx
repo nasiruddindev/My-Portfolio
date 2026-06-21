@@ -18,7 +18,7 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="text-secondary text-xl text-center  md:text-2xl font-medium font-inter max-w-110 mx-auto">
+            <p className="text-secondary text-xl px-4 md:px-0 text-center  md:text-2xl font-medium font-inter max-w-110 mx-auto">
               I build modern,responsive and user friendlly web applications with
               React
             </p>
@@ -26,17 +26,17 @@ const Hero = () => {
               <Button text="Download Cv" />
             </div>
 
-            <div className='flex gap-x-5 justify-center pb-10 '>
-              <div className="border border-black/50 w-12 h-12  rounded-full flex justify-center items-center">
-              <FaGithub className='text-3xl '/>
+            <div className='flex gap-x-3 md:gap-x-5 justify-center pb-10 '>
+              <div className="border border-black/50 w-8 md:w-12 h-8 md:h-12  rounded-full flex justify-center items-center">
+              <FaGithub className='text-xl md:text-3xl '/>
             </div>
 
 
-            <div className="border border-black/50 w-12 h-12  rounded-full flex justify-center items-center">
-              <FaLinkedinIn  className='text-3xl '/>
+            <div className="border border-black/50 w-8 md:w-12 h-8 md:h-12  rounded-full flex justify-center items-center">
+              <FaLinkedinIn  className='text-xl md:text-3xl '/>
             </div>
-            <div className="border border-black/50 w-12 h-12  rounded-full flex justify-center items-center">
-              <FaTwitter  className='text-3xl '/>
+            <div className="border border-black/50 w-8 md:w-12 h-8 md:h-12  rounded-full flex justify-center items-center">
+              <FaTwitter  className='text-xl md:text-3xl '/>
             </div>
             </div>
 

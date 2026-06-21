@@ -37,7 +37,7 @@ const Navbar = () => {
         <Flex className="md:hidden justify-between items-center px-3">
 
             <Image src={Logo} className="w-40 " />
-            <div onClick={()=>{setOpen (!open)}}>
+            <div className='cursor-pointer' onClick={()=>{setOpen (!open)}}>
             {open?<ImCross/>:<IoMenu
              className='text-3xl'/>}
           </div>
@@ -48,16 +48,16 @@ const Navbar = () => {
           <div>
             {
               open&&
-              <ul className="flex flex-col items-center mt-10 bg-slate-500 gap-y-6 rounded-2xl py-5">
-              <Link to="/"><ListItem text="Home" /></Link>
+              <ul className="flex flex-col items-center mt-10 bg-black/50 gap-y-6 rounded py-5 duration-300">
+              <Link to="/"><ListItem text="Home" className="text-white"/></Link>
 
-              <Link to="/abouts"><ListItem text="About" /></Link>
+              <Link to="/abouts"><ListItem text="About" className="text-white"/></Link>
 
-              <Link to="/skill"><ListItem text="Skills" /></Link>
-              <Link to="/projects"><ListItem text="Project" /></Link>
+              <Link to="/skill"><ListItem text="Skills" className="text-white"/></Link>
+              <Link to="/projects"><ListItem text="Project" className="text-white" /></Link>
 
               <Link to="/contacts">
-                <ListItem text="Contact" />
+                <ListItem text="Contact" className="text-white/70"/>
               </Link>
             </ul>
             }

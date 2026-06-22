@@ -1,29 +1,34 @@
-import {createRoutesFromElements,createBrowserRouter,Route,RouterProvider,
-} from "react-router-dom";
-import Home from "./pages/Home";
-import Abouts from "./pages/Abouts";
-import Skill from "./pages/Skill";
-import Projects from "./pages/Project";
-import Contacts from './pages/Contacts'
-import RootLayouts from "./layouts/RootLayouts";
+import {
+  createRoutesFromElements,
+  createBrowserRouter,
+  Route,
+  RouterProvider,
+} from 'react-router-dom'
+import Home from './pages/Home'
+import About from './layouts/About'
+import Skills from './layouts/Skills'
+import Projects from './layouts/Projects'
+import Contact from './layouts/Contact'
+import RootLayouts from './layouts/RootLayouts'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route to="/" element={<RootLayouts/>}>
-    <Route path="/" element={<Home />}></Route>
-    <Route path="/abouts" element={<Abouts />}></Route>
-    <Route path="/skill" element={<Skill/>}></Route>
-    <Route path="/projects" element={<Projects />}></Route>
-    <Route path="/contacts" element={<Contacts />}></Route>
+    <Route to="/" element={<RootLayouts />}>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="about" element={<About />}></Route>
+      <Route path="skills" element={<Skills />}></Route>
+
+      <Route path="projects" element={<Projects />}></Route>
+
+      <Route path="contact" element={<Contact />}></Route>
     </Route>
   )
-);
+)
 
 const App = () => {
   return (
     <>
-        <RouterProvider router={router} />
-
+      <RouterProvider router={router} />
     </>
   )
 }

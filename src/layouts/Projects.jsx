@@ -7,8 +7,8 @@ import Ecommerce from '../assets/e-commerce.png'
 import Safwan from '../assets/safwan.png'
 import ToDo from '../assets/todo.png'
 
-
 import Card from '../components/Card'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
   return (
@@ -21,11 +21,27 @@ const Projects = () => {
         </Flex>
 
         <Flex className="flex-col  gap-y-10 md:gap-y-0 md:flex-row items-center md:justify-between mt-10">
-          <Card title="E-Commerce" text="React" src={Ecommerce} imageClassName="h-50"/>
+          <Link to="https://exclusive-alpha-five.vercel.app/" target="_blank">
+            <Card
+              title="E-Commerce"
+              text="React"
+              src={Ecommerce}
+              imageClassName="h-50"
+            />
+          </Link>
 
-          <Card title="React-Safwan" text="React" src={Safwan} imageClassName="h-50"/>
+          <Link to="https://safwan-azure.vercel.app/" target="_blank">
+            <Card
+              title="React-Safwan"
+              text="React"
+              src={Safwan}
+              imageClassName="h-50"
+            />
+          </Link>
 
-          <Card title="To-Do" text="React" src={ToDo} imageClassName="h-50"/>
+          <Link to="https://nasiruddindev.github.io/Todo/" target="_blank">
+          <Card title="To-Do" text="React" src={ToDo} imageClassName="h-50" />
+          </Link>
         </Flex>
       </Container>
     </section>

@@ -5,6 +5,7 @@ import Button from '../components/Button'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa6'
 import Banner from '../assets/banner.png'
 import Image from '../components/Image'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -23,21 +24,30 @@ const Hero = () => {
               React
             </p>
             <div className='py-6 text-center'>
-              <Button text="Download Cv" />
+              <Button text="Resume" />
             </div>
 
-            <div className='flex gap-x-3 md:gap-x-5 justify-center pb-10 '>
-              <div className="border border-black/50 w-8 md:w-12 h-8 md:h-12  rounded-full flex justify-center items-center">
-              <FaGithub className='text-xl md:text-3xl '/>
+            <div className='flex gap-x-3  justify-center pb-10 '>
+              <Link to="https://github.com/nasiruddindev" target='_blank'>
+              <div className="border border-black/50 w-8 md:w-10 h-8 md:h-10  rounded-full flex justify-center items-center cursor-pointer">
+              <FaGithub className='text-xl md:text-2xl '/>
             </div>
+              </Link>
 
 
-            <div className="border border-black/50 w-8 md:w-12 h-8 md:h-12  rounded-full flex justify-center items-center">
-              <FaLinkedinIn  className='text-xl md:text-3xl '/>
+            <Link to="https://www.linkedin.com/in/devnasiruddin/" target='_blank'>
+            <div className="border border-black/50 w-8 md:w-10 h-8 md:h-10  rounded-full flex justify-center items-center cursor-pointer">
+              <FaLinkedinIn  className='text-xl md:text-2xl '/>
             </div>
-            <div className="border border-black/50 w-8 md:w-12 h-8 md:h-12  rounded-full flex justify-center items-center">
-              <FaTwitter  className='text-xl md:text-3xl '/>
+            </Link>
+
+
+            <Link to="https://x.com/nasiruddindev" target="_blank">
+            <div className="border border-black/50 w-8 md:w-10 h-8 md:h-10  rounded-full flex justify-center items-center cursor-pointer">
+              <FaTwitter  className='text-xl md:text-2xl '/>
             </div>
+            </Link>
+
             </div>
 
 

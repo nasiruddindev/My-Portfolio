@@ -9,7 +9,7 @@ import Button from '../components/Button'
 
 const Contact = () => {
   return (
-    <section className="pb-20">
+    <section className="py-20">
       <Container>
         <Flex className="items-center gap-x-3 md:gap-x-5 justify-center">
           <RiContactsLine className="text-2xl md:text-4xl" />

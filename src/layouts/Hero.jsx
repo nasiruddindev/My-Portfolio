@@ -10,7 +10,7 @@ import CV from '../assets/nasiruddin.pdf'
 
 const Hero = () => {
   return (
-    <section className="bg-slate-400">
+    <section id="home" className="bg-slate-400">
       <Container>
         <div>
           <h1 className="text-center text-primary font-bold font-inter text-2xl md:text-5xl py-5">

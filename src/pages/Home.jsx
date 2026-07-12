@@ -1,19 +1,241 @@
 import React from 'react'
 import Navbar from '../layouts/Navbar'
 import Hero from '../layouts/Hero'
-import About from '../layouts/About'
-import Skills from '../layouts/Skills'
-import Projects from '../layouts/Projects'
-import Contact from '../layouts/Contact'
 import Footer from '../layouts/Footer'
+import Container from '../components/Container'
+import Flex from '../components/Flex'
+import Title from '../components/Title'
+import Pera from '../components/Pera'
+import { IoIosContact } from 'react-icons/io'
+import { IoLocationOutline, IoLogoJavascript } from 'react-icons/io5'
+import { MdOutlineEmail, MdOutlineEventAvailable } from 'react-icons/md'
+import { GiSkills } from 'react-icons/gi'
+import { FaBootstrap, FaCss3, FaHtml5, FaReact } from 'react-icons/fa6'
+import { SiTailwindcss } from 'react-icons/si'
+import Card from '../components/Card'
+import { Link } from 'react-router-dom'
+import { GrProjects } from 'react-icons/gr'
+import Ecommerce from '../assets/e-commerce.png'
+import Safwan from '../assets/safwan.png'
+import ToDo from '../assets/todo.png'
+import { RiContactsLine } from 'react-icons/ri'
+import Input from '../components/Input'
+import Button from '../components/Button'
 
 const Home = () => {
   return (
     <div>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
+      {/* About section start */}
+
+      <section id="about" className="py-20 bg-sky-100">
+      <Container>
+        <Flex className="flex-col gap-y-10 md:gap-y-0 md:flex-row items-center">
+          <div className="md:w-6/12">
+            <Title text="About Me" className="text-center md:text-start"/>
+            <p className="text-secondary text-xl px-4 md:px-0 text-center md:text-start md:text-2xl font-medium font-inter max-w-130 mx-auto md:mx-0 py-5">
+              I'm a Passionate Frontend React Developer Who loves to create  beautiful and functional web experience
+            </p>
+            <Pera text="I enjoy turning ideas into real products. I have experience building web appllications using React,JavaScript,Tailwind CSS and modern tools" className="max-w-125 text-center md:text-start px-3 md:px-0"/>
+          </div>
+
+          <div className="md:w-6/12">
+          <div className='shadow-2xl p-3 md:py-10 lg:p-10 flex flex-col gap-y-6 bg-white rounded md:rounded-2xl'>
+
+
+            <div className='flex justify-between'>
+              <div className='flex gap-x-1 md:gap-x-2 items-center'>
+                <IoIosContact className='text-xl md:text-2xl'/>
+                <p className='text-primary text-base md:text-xl font-medium font-inter'>Name :</p>
+
+              </div>
+              <p className='text-primary text-base md:text-xl font-medium font-inter'>Nasir Uddin</p>
+            </div>
+            <div className='flex justify-between'>
+              <div className='flex gap-x-1 md:gap-x-2 items-center'>
+                <IoLocationOutline  className='text-xl md:text-2xl'/>
+                <p className='text-primary text-base md:text-xl font-medium font-inter'>Location :</p>
+
+              </div>
+              <p className='text-primary text-base md:text-xl font-medium font-inter'>Dhaka,Bangladesh</p>
+            </div>
+            <div className='flex justify-between'>
+              <div className='flex gap-x-1 md:gap-x-2 items-center'>
+                <MdOutlineEmail  className='text-xl md:text-2xl'/>
+                <p className='text-primary text-base md:text-xl font-medium font-inter'>Email :</p>
+
+              </div>
+              <p className='text-primary text-base md:text-xl font-medium font-inter'>dev.nasiruddin@gmail.com</p>
+            </div>
+            <div className='flex justify-between'>
+              <div className='flex gap-x-1 md:gap-x-2 items-center'>
+                <MdOutlineEventAvailable  className='text-xl md:text-2xl'/>
+                <p className='text-primary text-base md:text-xl font-medium font-inter'>Availability :</p>
+
+              </div>
+              <p className='text-green-600 text-base md:text-xl font-medium font-inter'>Open to work</p>
+            </div>
+
+
+          </div>
+          </div>
+        </Flex>
+      </Container>
+    </section>
+
+    {/* About section End */}
+
+    {/* Skills section Start  */}
+
+    <section id="skills" className="py-20 bg-sky-100">
+      <Container>
+        <Flex className="items-center gap-x-2 justify-center">
+          <GiSkills className='text-4xl'/>
+
+          <Title text="Skills" className="text-center " />
+        </Flex>
+
+        <div className="shadow-2xl p-10 md:w-8/12 mx-3 md:mx-auto bg-white rounded-2xl mt-10">
+          <h3 className="text-primary text-2xl md:text-3xl font-inter font-bold text-center pb-5">
+            Frontend developer
+          </h3>
+
+          <Flex className="flex-col md:flex-row gap-y-6 md:gap-y-0 justify-evenly mt-5 ">
+            <Flex className="flex-col gap-y-6">
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
+              <FaHtml5 className='text-xl'/>
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
+                HTML
+              </h5>
+            </Flex>
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
+              <FaCss3  className='text-xl'/>
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
+                CSS
+              </h5>
+            </Flex>
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
+              <FaBootstrap  className='text-xl'/>
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
+                BOOTSTRAP
+              </h5>
+            </Flex>
+          </Flex>
+
+
+          <Flex className="flex-col gap-y-6">
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
+              <SiTailwindcss  className='text-xl'/>
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
+                Tailwind
+              </h5>
+            </Flex>
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
+              <IoLogoJavascript   className='text-xl'/>
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
+                JavaScript
+              </h5>
+            </Flex>
+            <Flex className="gap-x-2 justify-center items-center shadow-xl p-3 rounded-2xl">
+              <FaReact  className='text-xl'/>
+              <h5 className="text-xl md:text-2xl text-primary font-medium  font-inter">
+                React
+              </h5>
+            </Flex>
+          </Flex>
+          </Flex>
+        </div>
+      </Container>
+    </section>
+
+    {/* Skills section End */}
+
+
+    {/* Project section Start */}
+
+    <section id="project" className="py-20">
+      <Container>
+        <Flex className="items-center gap-x-3 md:gap-x-5 justify-center">
+          <GrProjects className="text-xl md:text-3xl" />
+
+          <Title text="Projects" className="text-center " />
+        </Flex>
+
+        <Flex className="flex-col  gap-y-10 md:gap-y-0 md:flex-row items-center md:justify-between mt-10">
+          <Link to="https://exclusive-alpha-five.vercel.app/" target="_blank">
+            <Card
+              title="E-Commerce"
+              text="React"
+              src={Ecommerce}
+              imageClassName="h-50"
+            />
+          </Link>
+
+          <Link to="https://safwan-azure.vercel.app/" target="_blank">
+            <Card
+              title="React-Safwan"
+              text="React"
+              src={Safwan}
+              imageClassName="h-50"
+            />
+          </Link>
+
+          <Link to="https://nasiruddindev.github.io/Todo/" target="_blank">
+          <Card title="To-Do" text="React" src={ToDo} imageClassName="h-50" />
+          </Link>
+        </Flex>
+      </Container>
+    </section>
+
+    {/* Project section End */}
+
+
+    {/* Contact section Start */}
+
+    <section id="contact" className="py-20">
+      <Container>
+        <Flex className="items-center gap-x-3 md:gap-x-5 justify-center">
+          <RiContactsLine className="text-2xl md:text-4xl" />
+
+          <Title text="Contact" className="text-center " />
+        </Flex>
+        <Pera
+          text="
+        Feel Free to Contact me buy submitting the from below and I will get back to you as soon ass possible"
+          className="max-w-150 text-center px-5 mx-auto  py-3"
+        />
+
+        <Flex className="flex-col md:flex-row gap-y-5 md:gap-y-0 justify-between items-center mt-5 md:mt-10 ">
+          <div className="md:w-6/12">
+            <Title
+              text="Find Me easily Contact without any technical skills" className="max-w-100 text-center leading-10 md:leading-16"/>
+          </div>
+
+          <div className="md:w-6/12">
+            <div className=' bg-white shadow-2xl rounded-2xl p-5 w-screen sm:w-100 md:w-10/12'>
+              <form action="" className='flex flex-col'>
+              <label className='text-xl text-primary font-inter font-semibold pb-2'>Name:</label>
+              <Input text="Enter Your name" className=""/>
+
+
+              <label className='text-xl text-primary font-inter font-semibold pb-2'>Email:</label>
+              <Input text="Enter Your Email"/>
+
+
+              <label className='text-xl text-primary font-inter font-semibold pb-2'>Message:</label>
+              <textarea type="text" placeholder='Enter Your Message' className='border-none outline-none bg-sky-200 px-3 py-1 rounded mb-3 placeholder:text-black/50 w-full placeholder:font-medium placeholder:font-inter placeholder:text-base'/>
+
+              <Button text="Submit"/>
+
+            </form>
+            </div>
+          </div>
+        </Flex>
+      </Container>
+    </section>
+
+    {/* Contact section End */}
+
+
     </div>
   )
 }

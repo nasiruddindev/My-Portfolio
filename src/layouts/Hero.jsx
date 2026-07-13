@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa6'
 import Banner from '../assets/banner.png'
 import Image from '../components/Image'
 import { Link } from 'react-router-dom'
-import CV from '../assets/nasiruddin.pdf'
+import CV from '../assets/nasiruddin-resume.pdf'
 
 const Hero = () => {
   return (
